@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resizable Etch A Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Etch A Sketch!</h1>
+        <p>You can start drawing by first selecting the size of the board, then choosing your color. You can stop drawing by simply clicking.</p>
+    </header>
+    <input type="range" min="1" max="50" value="16" id="slider">
+    <span id="slider-value">16x16</span>
+    <button id="black-mode">Black</button>
+    <button id="rainbow-mode">Rainbow</button>
+    <button id="erase-board">Erase Board</button>
+    <button id="pick-color-button">Pick Your Own Color</button>
+    <input type="color" id="color-picker" style="display:none;">
+    <div id="container"></div>
+    <script src="script.js"></script>
+
+    <footer>
+        <p>Created by <a href="https://andrew-samountry-personal-website.vercel.app/" target="_blank">Andrew Samountry</a></p>
+</body>
+</html>
